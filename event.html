@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Management</title>
+
+    <!-- AOS Animation CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+    <!-- Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="event.css">
+
+</head>
+
+<body>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <header id="mainHeader">
+            <div class="container">
+                <div class="logo">KPRITES</div>
+
+                <!-- FIXED onclick -->
+                <div class="hamburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <nav id="nav-menu">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Speakers</a>
+                    <a href="#">Schedule</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="left">
+                <h2>Freshers Event</h2>
+                <p><strong>Welcome to the biggest college event!</strong> Join us for learning, fun and opportunities.</p>
+                <button class="commonBtn">Purchase Ticket</button>
+            </div>
+
+            <div class="right">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrFuC-I5WJTnGB_Ud5A7EypVJESUgBH9CyrA&s" />
+                <div class="tagline">
+                    Kommuri Prathap Reddy – Guest Speaker <br>
+                    <em>Chairman of KPRITES</em>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL ICONS -->
+    <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+        <div class="container">
+            <div class="about-left">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb8fA_oITAvvVWBTt7wfWvLrrqzTu5vFjJ1A&s">
+            </div>
+
+            <div class="about-right">
+                <h4>ABOUT EVENT</h4>
+                <h1>Explore Amazing Marketing</h1>
+                <p>Join our event to learn marketing, startup ideas, technology and career growth.</p>
+                <button class="commonBtn" style="width:140px;">Explore Us</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- JOIN SECTION -->
+    <section class="joinSection">
+        <h2 data-aos="zoom-in">Why you should join<br>THE EVENT?</h2>
+
+        <div class="container">
+            <div class="cards">
+
+                <div class="card" data-aos="fade-left">
+                    <div class="icon"><i class="fa-solid fa-rocket"></i></div>
+                    <div class="title">Startup</div>
+                    <div class="desc">Learn how to build your startup.</div>
+                    <button class="commonBtn">Read More</button>
+                </div>
+
+                <div class="card" data-aos="fade-left">
+                    <div class="icon"><i class="fa-solid fa-lightbulb"></i></div>
+                    <div class="title">Innovation</div>
+                    <div class="desc">Creative ideas to grow.</div>
+                    <button class="commonBtn">Read More</button>
+                </div>
+
+                <div class="card" data-aos="fade-left">
+                    <div class="icon"><i class="fa-solid fa-users"></i></div>
+                    <div class="title">Networking</div>
+                    <div class="desc">Meet mentors & professionals.</div>
+                    <button class="commonBtn">Read More</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENT VENUE -->
+    <section class="top-section">
+        <div class="container">
+
+            <div class="event-intro" data-aos="fade-left">
+                <h4>Event Venue</h4>
+                <h1>Get the best experience <br/>in the world of events</h1>
+            </div>
+
+            <div class="event-info" data-aos="fade-right">
+
+                <div class="info-box">
+                    <strong>26–29 Dec 2025</strong>
+                    <small>9:30 AM – 3:00 PM</small>
+                </div>
+
+                <div class="info-box">
+                    <strong>KPRIT Ground</strong>
+                    <small>Ghatkesar</small>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SCHEDULE SECTION -->
+    <section class="bottom-section" data-aos="fade-left">
+
+        <div class="schedule">
+            <div class="day-box active">
+                <h3>DAY 1</h3>
+                <p>Dec 27, 2025</p>
+            </div>
+            <div class="day-box">
+                <h3>DAY 2</h3>
+                <p>Dec 28, 2025</p>
+            </div>
+            <div class="day-box">
+                <h3>DAY 3</h3>
+                <p>Dec 29, 2025</p>
+            </div>
+            <div class="day-box">
+                <h3>DAY 4</h3>
+                <p>COMING SOON</p>
+            </div>
+        </div>
+
+        <div class="eventcard">
+            <div class="eventcard-image">
+                <span class="badge">Conference</span>
+                <img src="https://www.sspad.edu.in/assets/images/event/2023/fresher-day1.jpg">
+            </div>
+
+            <div class="eventcard-content">
+                <div class="eventcard-top">
+                    <div>10:00 AM – 3:00 PM</div>
+                    <div>Dec 27, 2025</div>
+                </div>
+
+                <h2> JNTU-Freshers Meet 2025</h2>
+
+                <div class="speaker-info">
+                    <img src="https://kpritech.ac.in/wp-content/uploads/2025/02/Prashanth-Vice-Chairman-CEO.jpg">
+                    <div>
+                        <h3>Guest Speaker</h3>
+                        <p>Kommuri Prathap Reddy</p>
+                    </div>
+                </div>
+
+                <button class="commonBtn" style="width:150px;">Learn More</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section>
+        <div class="coundown-container" data-aos="zoom-in">
+            <h1 style="text-align:center; margin-bottom: 20px;">Countdown until the Event<br>Register Now</h1>
+
+            <div class="timer">
+                <div class="time-box">
+                    <h2 id="days">02</h2><p>Days</p>
+                </div>
+                <div class="time-box">
+                    <h2 id="hours">15</h2><p>Hours</p>
+                </div>
+                <div class="time-box">
+                    <h2 id="minutes">20</h2><p>Minutes</p>
+                </div>
+                <div class="time-box">
+                    <h2 id="seconds">36</h2><p>Seconds</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- EVENT VIDEO -->
+        <div class="event-video" data-aos="zoom-in">
+            <video id="eventVideo" poster="">
+                <source src="">
+            </video>
+            <button class="play-btn" id="playBtn"></button>
+        </div>
+    </section>
+    <section class="ticket-section">
+        <div><h2 class="ticket-title">Event Ticket Pass</h2></div>
+
+    <div class="ticket-container">
+
+        <!-- Ticket 1 -->
+        <table class="ticket-table">
+            <thead>
+                <tr>
+                    <th colspan="2" class="ticket-header vip">VIP PASS – ₹1000</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Price</td>
+                    <td>₹1000</td>
+                </tr>
+                <tr>
+                    <td>Seating</td>
+                    <td>Front Row</td>
+                </tr>
+                <tr>
+                    <td>Food</td>
+                    <td>Included</td>
+                </tr>
+                <tr>
+                    <td>Special Access</td>
+                    <td>Backstage Entry</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="center">
+                        <button class="buy-btn">Buy Ticket</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Ticket 2 -->
+        <table class="ticket-table">
+            <thead>
+                <tr>
+                    <th colspan="2" class="ticket-header regular">REGULAR PASS – ₹800</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Price</td>
+                    <td>₹800</td>
+                </tr>
+                <tr>
+                    <td>Seating</td>
+                    <td>Front Row</td>
+                </tr>
+                <tr>
+                    <td>Food</td>
+                    <td> Included</td>
+                </tr>
+                <tr>
+                    <td>Special Access</td>
+                    <td>Backstage Entry</td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="center">
+                        <button class="buy-btn">Buy Ticket</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+</section>
+<section class="coordinator-section">
+    <h2 class="coordinator-title">Event Co-Ordinators</h2>
+
+    <div class="coordinator-container">
+
+        <!-- Coordinator 2 -->
+        <div class="coordinator-card">
+            <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEwL3Jhd3BpeGVsb2ZmaWNlN18zZF9zdHlsZV9ib3lfc2F5aW5nX2hlbGxvX3dpdGhfc21pbGVfaXNvbGF0ZWRfb19kM2ZkNjFkZC00M2M0LTQ0NDEtOWE5MC1mYzQ0MTNlNjBhNTRfMS5wbmc.png" alt="Coordinator 2">
+            <p>Ashray</p>
+            <p>JNTU-CO-ORDINATOR<BR><SPAN>FRESHERS</SPAN></p>
+        </div>
+
+        <!-- Coordinator 3 -->
+        <div class="coordinator-card">
+            <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEwL3Jhd3BpeGVsb2ZmaWNlN18zZF9zdHlsZV9ib3lfc2F5aW5nX2hlbGxvX3dpdGhfc21pbGVfaXNvbGF0ZWRfb19kM2ZkNjFkZC00M2M0LTQ0NDEtOWE5MC1mYzQ0MTNlNjBhNTRfMS5wbmc.png" alt="Coordinator 3">
+            <h3>Sai Kiran</h3>
+            <p>Varun</p>
+            <p>JNTU-CO-ORDINATOR<BR><SPAN>FRESHERS</SPAN></p>
+        </div>
+
+        <!-- Coordinator 4 -->
+        <div class="coordinator-card">
+            <img src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEwL3Jhd3BpeGVsb2ZmaWNlN18zZF9zdHlsZV9ib3lfc2F5aW5nX2hlbGxvX3dpdGhfc21pbGVfaXNvbGF0ZWRfb19kM2ZkNjFkZC00M2M0LTQ0NDEtOWE5MC1mYzQ0MTNlNjBhNTRfMS5wbmc.png" alt="Coordinator 4">
+            <p>Ajay</p>
+            <p>JNTU-CO-ORDINATOR<BR><SPAN>FRESHERS</SPAN></p>
+        </div>
+
+    </div>
+</section>
+<footer class="small-footer">
+    <p>© 2025 Event Management. All rights reserved.</p>
+</footer>
+
+
+
+
+    <!-- FIXED AOS JS LINK -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script src="event.js"></script>
+    <script src="js/testimonial.js"></script>
+
+</body>
+
+</html>
