@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap'); 
+:root { --primary-color: #a33cf0; --secondary-color: #271839; --text-light: #fff; --highlightColor: #e15bc8; --primary-gradient: linear-gradient(90deg, #ff4cc7, #7c2cff); --gradient: linear-gradient(90deg, #ff4cc7, #8c55ff); } 
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", Sans-Serif; } body { background: var(--secondary-color); background-image: radial-gradient(circle at top left, #3e195c, transparent 60%), radial-gradient(circle at bottom right, #1a0730, transparent 60%); color: var(--text-light); }
+ .container { max-width: 1200px; margin: auto; } 
+ #mainHeader.fixed { position: fixed; top: 0; left: 0; background: var(--secondary-color); width: 100%; z-index: 9999; }
+  #mainHeader { transition: all 0.3s ease; }
+ header.container { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem !important; } 
+ .commonBtn { background: var(--gradient); margin-bottom: 5px; color: white; padding: 0.8rem 1rem; border-radius: 30px; cursor: pointer; font-size: 1rem; }
+  .commonBtn:hover { transform: translateX(-3px); opacity: 0.9; } .logo { font-size: 1.5rem; font-weight: bold; color: white; }
+   nav { display: flex; gap: 2.5rem; background: #39264a; padding: 10px 22px; border-radius: 22px; } 
+   nav a { color: white; text-decoration: none; font-weight: 500; }
+   .hamburger { display: none; flex-direction: column; gap: 5px; cursor: poiner; } url
+   .hamburger span { height: 3px; width: 25px; background: white; } 
+   .hero { background-image:none ; background-size: 100%; } 
+   .hero.container { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; } 
+   .left { flex: 1 1 45%; } .left h2 { color: var(--highlightColor); font-weight: 300; } 
+   .left h2 { font-weight: 5rem; margin: 0.5rem 0; } 
+   .left p { margin: 1rem 0; font-family: system-ui; font-size: 1.1rem; margin-top: 20px; } 
+   .right { flex: 1 1 45%; text-align: center; display:flex; flex-direction:row; } .right img { width: 200PX; border-radius: 1rem; } 
+   .tagline { color: white; font-size: 2.1rem; font-family: fantasy; margin-top: 1rem; margin-bottom: 4rem; } 
+   .tagline em { font-size: 1.3rem; } 
+   .social { position: fixed; bottom: 50px; right: 50px; z-index: 9999; display: flex; flex-direction: column; gap: 10px; } 
+.social a { color: white; font-size: 1.2rem; text-decoration: none; } 
+.social a:hover { color: var(--primary-color); }
+ .about { padding: 4rem 0rem; background: none; background-size: 100%; } 
+ .about .container { display: flex; flex-direction: row; max-width: 1200px; gap: 40px; flex-wrap: wrap; align-items: center; justify-content: center; }
+  .about-left { flex: 1; min-width: 300px; position: relative; }
+   .about-left img { width: 400px; border-radius: 8px; } 
+   .about-right { flex: 1; min-width: 300px; } 
+   .about-right h4 { color: var(--highlightColor); letter-spacing: 2px; margin-bottom: 10px; } 
+   .about-right p { font-size: 16px; line-height: 1.5; margin-bottom: 30px; } 
+   .joinSection .container { padding: 80px 20px; max-width: 12000px; margin: auto; text-align: center; } 
+   .joinSection { padding: 100px 20px; background-image:none ; background-size: 100%; } 
+   .joinSection h2 { font-size: 36px; color: white; text-align: center; margin-bottom: 10px; } 
+   .cards { display: flex; gap: 30px; flex-wrap: wrap; justify-content: center; background: transparent; transition: background 0.3s ease; } 
+   .card { background: rgba(255, 255, 255, 0.02); border-radius: 20px; padding: 30px; flex: 1 1 300px; max-width: 380px; text-align: left; transition: background 0.5s ease; }
+    .card:hover { background: rgba(255, 255, 255, 0.05); backdrop-filter: blue(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 0 25px rgba(255, 255, 255, 0.08); }
+     .icon { width: 50px; height: 50px; border-radius: 50%; background: var(--gradient); display: flex; align-items: center; justify-content: center; color: white; font-size: 22px; margin-bottom: 15px; }
+      .title { font-size: 20px; font-weight: 600; margin-bottom: 15px; color: white; } .desc { font-size: 15px; margin-bottom: 20px; } 
+      .top-section { background: url('../images/back.png'), var(--primary-gradient); padding: 100px 20px; background-size: 100%; text-align: center; display: flex; } 
+      .top-section .container { max-width: 1300px; margin: auto; display: flex; flex-direction: row; gap: 4rem; }
+       .event-intro { display: flex; flex-direction: column; text-align: left; gap: 1rem; } 
+       .event-intro h4 { text-transform: uppercase; letter-spacing: 2px; color: #f3c2ff; font-size: 14px; }
+        .event-intro h1 { font-size: 2.8rem; }
+         .event-info { display: flex; flex-direction: column; gap: 1rem; }
+          .info-box { display: flex; align-items: center; background: rhba(255, 255, 255, 0.1); padding: 1rem 1.5rem; border-radius: 5px; gap: 1rem; } 
+          .info-box-icon { padding: 10px; border-radius: 50%; display: flex; justify-content: center; align-items: center; }
+           .info-box-icon img { width: 20px; height: 20px; } 
+           .schedule { display: flex; justify-content: center; border-radius: 60px 60px 0 0; overflow: hidden; max-width: 700px; margin-top: 2rem; margin: auto; flex-wrap: wrap; } 
+           .day-box { flex: 1; min-height: 10px; padding: 1.2rem 1rem; text-align: center; border-right: 1px solid #333; background: #1b1b3c; }
+            .day-box.active { background: var(--primary-gradient); border-radius: 60px 0 0 0; } .day-box { margin-block-start: 0.3rem; } 
+            .day-box h3 { font-size: 0.7rem; } 
+            .day-box p { font-size: 0.5rem; }
+             .bottom-section { padding: 60px 20px; } 
+             .eventcard { background: rgba(255, 255, 255, 0.05); border-radius: 15px; display: flex; gap: 20px; overflow: hidden; flex-wrap: wrap; max-width: 1000px; flex-direction: row !important; margin: auto; width: 100%; padding: 20px; color: white; } 
+             .eventcard-image { position: relative; flex: 1 1 350px; border-radius: 10px; overflow: hidden; } 
+             .eventcard-image img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: 10px; } 
+             .badge { position: absolute; top: 15px; left: 15px; background: #ff3b7f; color: white; padding: 15px; font-size: 14px; border-radius: 5px; } 
+             .eventcard-content { flex: 1 1 400px; display: flex; flex-direction: column; gap: 15px; justify-content: center; } 
+             .eventcard-top { display: flex; gap: 10px; font-size: 14px; color: white; flex-wrap: wrap; } 
+             .eventcard-top div { background: rgba(255, 255, 255, 0.1); padding: 5px 12px; border-radius: 20px; display: flex; align-items: center; gap: 5px; } 
+             .h2 { font-size: 24px; line-height: 1.3; font-weight: 600; } 
+             .speaker-info { padding-right: 15px; margin-right: 15px; }
+              .speaker-info img { width: 40px; height: 40px; border-radius: 15px; object-fit: cover; }
+               .speaker-info h3 { margin: 0; font-size: 16px; }
+                .speaker-info p { margin: 0; font-size: 13px; color: #bfbfbf; } 
+                .countdown-container { background-image: none; padding: 100px 20px; background-size: 100%; display: flex; justify-content: space-between; }
+                 .countdown-container h1 { font-size: 34px; margin-bottom: 20px; } 
+                 .timer { display: flex; flex-direction: row; justify-content: center; gap: 15px; flex-wrap: wrap; } 
+                 .time-box { background: linear-gradient(180deg, #d000ff, #6e00ff); padding: 20px; border-radius: 12px; text-align: center; width: 80px; } 
+                 .time-box h2 { margin: 0; font-size: 40px; } .time-box p { margin: 0; font-size: 12px; } 
+                 .event-video { position: relative; margin: 0; padding: 0; text-align: center; } 
+                 .play-btn { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0, 0, 0, 0.5); border: none; border-radius: 50%; width: 80px; height: 80px; color: white; font-size: 24px; cursor: pointer; } 
+                 .speakerSection h2 { font-size: 40px; text-align: center; margin-bottom: 40px; } 
+                 .speakerSection { padding: 50px; background: none; } 
+                 .speaker-container { margin: auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; max-width: 1200px; align-items: center; } 
+                 .speaker-card { background: transparent; text-align: center; flex: 1 1 calc(33.333%-40px); max-width: 300px; }
+                  .speaker-img { position: relative; width: 180px; height: 180px; margin: 0 auto 15px; border-radius: 50%; padding: 5px; background: liner-gradient(135deg, #8a2be2, #ff00ff); display: flex; align-items: center; justify-content: center; } 
+                  .speaker-img img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; border: 5px solid #1a0333; } 
+                  .speaker-name { font-size: 18px; font-weight: 600; margin-bottom: 5px; } 
+                  .speaker-title { font-size: 14px; color: #ccc; margin-bottom: 10px; }
+                  
+                  .social-icons { display: flex; justify-content: center; gap: 10px; }
+                   .ticket-section { padding: 60px 0; text-align: center; } 
+                   .ticket-title { font-size: 32px; font-weight: bold; margin-bottom: 40px; }
+                    .ticket-container { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; } 
+                    .ticket-table { width: 300px; border-collapse: collapse; border-radius: 10px; overflow: hidden; box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15); }
+                     .ticket-header { font-size: 18px; padding: 15px; color: #fff; font-weight: 600; } 
+                     
+                     
+        .vip { background: #e91e63; /* Pink */ } .regular { background: #3f51b5; /* Blue */ } 
+        .ticket-table td { padding: 12px; font-size: 15px; border-bottom: 1px solid #ddd; }
+         .ticket-table td:first-child { font-weight: 600; text-align: left; } 
+         .center { text-align: center; }
+          .buy-btn { background: #ff9800; color: white; padding: 10px 18px; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: 0.3s; } 
+          .buy-btn:hover { background: #e68a00; } .coordinator-section { padding: 60px 0; text-align: center; }
+           .coordinator-title { font-size: 32px; font-weight: bold; margin-bottom: 40px; } 
+           .coordinator-container { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; } 
+           .coordinator-card { width: 220px; background: #fff; border-radius: 15px; padding: 20px; box-shadow: 0px 5px 15px rgba(0,0,0,0.15); transition: 0.3s; } 
+           .coordinator-card img { width: 100px; height: 100px; object-fit: cover; border-radius: 100%; margin-bottom: 15px; } 
+           .coordinator-card h3 { font-size: 20px; margin: 5px ; font-weight: 600; } 
+           .coordinator-card p { font-size: 14px; color: #555; } 
+           .small-footer { background: #111; padding: 12px 0; text-align: center; color: #eee; font-size: 14px; margin-top: 40px; } 
+                 .small-footer p { margin: 0; letter-spacing: 0.5px; }
+                 .coordinator-card SPAN{
+                    color: RED;
+                    font-weight: bold;
+                    text-decoration: underline;
+                 }
